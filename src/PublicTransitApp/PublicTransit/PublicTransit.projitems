@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{CD5594D5-DCF7-4EE6-B7A7-4FB07FF1DF7B}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>PublicTransit</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)MoravecLabs\Utilities.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MoravecLabs\Atom\Atom.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MoravecLabs\Atom\AtomCore.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MoravecLabs\Infrastructure\BaseViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MoravecLabs\UI\Binding\BaseBinding.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MoravecLabs.iOS\UI\BindableUITableViewDataSource.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MoravecLabs.iOS\UI\Binding\UITextFieldBinding.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MainMapViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MapUtilities.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MoravecLabs.iOS\Extensions\UIColorExtensions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)MoravecLabs.iOS\" />
+    <Folder Include="$(MSBuildThisFileDirectory)ViewModels\" />
+    <Folder Include="$(MSBuildThisFileDirectory)MoravecLabs.iOS\Extensions\" />
+  </ItemGroup>
+</Project>
